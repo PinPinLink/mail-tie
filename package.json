@@ -9,12 +9,16 @@
   "keywords": [
     "HTML",
     "mail",
-    "'embeeded",
+    "embeeded",
     "image'"
   ],
   "author": "Vincent Chen <vincent@pinpin.link>",
   "license": "MIT",
+  "bin": {
+    "mail-tie": "bin/mail-tie.js"  
+  },
   "dependencies": {
+    "email-validator": "^1.1.1",
     "mime": "^2.0.0",
     "nodemailer": "^4.1.0"
   }
