@@ -1,0 +1,17 @@
+{
+  "name": "mail-tie",
+  "version": "0.1.0",
+  "description": "HTML mail embedded image",
+  "main": "mail-tie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "mail",
+    "'embeeded",
+    "image'"
+  ],
+  "author": "Vincent Chen <vincent@pinpin.link>",
+  "license": "MIT"
+}
