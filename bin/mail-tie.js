@@ -3,6 +3,7 @@
 'use strict';
 
 var fs = require('fs'),
+    path = require('path'),
     mailTie = require('../mail-tie'),
     smtpFields = ['service', 'host', 'port', 'secure'],
     authFields = ['user', 'pass'],
@@ -19,9 +20,13 @@ for (var i = 0, j = process.argv.length; i < j; i++) {
     }
 }
 
-if (!this.project) {
+if (!this.project && !this.demo) {
     console.error('\x1b[31m[error]\x1b[0m %s', '-project not set');
     return;
+}
+
+if (this.demo) {
+    this.project = path.dirname(require.resolve('../mail-tie')) + '/demo'
 }
 
 if (this.web) {
