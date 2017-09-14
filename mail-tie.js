@@ -6,7 +6,7 @@ var fs = require('fs'),
 
 module.exports.web = function (project, file) {
     project = projectHandler(project);
-    if (file === true) {
+    if (!file || file === true) {
         file = project.path;
     }
     checkFile(file);
