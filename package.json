@@ -2,6 +2,10 @@
   "name": "mail-tie",
   "version": "0.1.0",
   "description": "HTML mail embedded image",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pinpinlink/mail-tie.git"
+  },
   "main": "mail-tie.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +19,7 @@
   "author": "Vincent Chen <vincent@pinpin.link>",
   "license": "MIT",
   "bin": {
-    "mail-tie": "bin/mail-tie.js"  
+    "mail-tie": "bin/mail-tie.js"
   },
   "dependencies": {
     "email-validator": "^1.1.1",
